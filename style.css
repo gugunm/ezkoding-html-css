@@ -1,9 +1,193 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-color: pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: pink; */
+}
+
+header {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6rem;
+  height: 80px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  /* background: red; */
+}
+
+h1 {
+  font-size: 40px;
+  padding: 0;
+  margin-bottom: 0;
+  /* background: red; */
+}
+
+nav {
+  /* background: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  /* border: 1px solid red; */
+  /* padding: 10px 4rem; */
+}
+
+main .background-image {
+  position: absolute;
+  z-index: -10;
+  height: 500px;
+  width: 100%;
+  background-image: url('https://m.media-amazon.com/images/M/MV5BMTdjNTBhM2ItZTEyYy00OGMzLWEzNDAtNWI4YmE4MjUyYjZjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+main .overlay-background-image {
+  position: absolute;
+  z-index: -5;
+  height: 500px;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  position: relative;
+  padding: 8rem 6rem;
+  color: white;
+}
+
+.cover {
+  flex-basis: max-content;
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.content .genre {
+  margin-top: 32px;
+}
+
+.content .genre li {
+  font-size: 14px;
+  border: 1px solid white;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.synopsis {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.cta-trailer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta-trailer a {
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+}
+
+.cta-trailer a:hover {
+  color: black;
+  background: white;
+}
+
+.content .detail {
+  flex-direction: column;
+  margin-top: 64px;
+  color: black;
+}
+
+.content .detail li {
+  display: flex;
+  align-items: center;
+  line-height: auto;
+}
+
+.content .detail li span,
+.content .detail li label {
+  display: inline;
+}
+
+.content .detail li label {
+  color: #c5c5c5;
+  width: 150px;
+}
+
+.cta-edit-delete {
+  display: flex;
+  align-items; center;
+  gap: 12px;
+}
+
+.cta-edit-delete a {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #011939;
+  color: #febf00;
+}
+
+.cta-edit-delete a:hover {
+  opacity: 0.85;
+}
+
+.cta-edit-delete .delete {
+  background: #e53e3e;
+  color: white;
+}
+
+footer {
+  height: 50px;
+  background: #011939;
+  display: flex;
+  color: white;
+  padding: 0 6rem;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
