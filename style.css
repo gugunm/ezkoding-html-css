@@ -20,7 +20,7 @@ header {
 }
 
 h2 {
-  /* background: red; */
+  color: #011939;
 }
 
 h1 {
@@ -31,9 +31,13 @@ h1 {
 }
 
 nav {
-  /* background: yellow; */
+  color: #011939;
   display: flex;
   align-items: center;
+}
+
+nav a {
+  color: #011939;
 }
 
 ul {
@@ -148,6 +152,10 @@ main .overlay-background-image {
 .content .detail li span,
 .content .detail li label {
   display: inline;
+}
+
+.content .detail li span {
+  color: #011939;
 }
 
 .content .detail li label {
