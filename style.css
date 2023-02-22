@@ -6,17 +6,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: pink; */
 }
 
 header {
-  border: 1px solid white;
+  margin: auto;
+  max-width: 1440px;
+  /* background: red; */
+  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 6rem;
   height: 80px;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25); */
 }
 
 h2 {
@@ -55,6 +57,9 @@ a {
 
 main {
   position: relative;
+  /* margin: auto; */
+  /* width: 100%;
+  margin: auto; */
   /* border: 1px solid red; */
   /* padding: 10px 4rem; */
 }
@@ -79,17 +84,20 @@ main .overlay-background-image {
 }
 
 .content-wrapper {
+  margin: auto;
+  max-width: 1440px;
   display: flex;
   align-items: flex-start;
   gap: 56px;
   position: relative;
   padding: 8rem 6rem;
   color: white;
+  /* background: red; */
 }
 
 .cover {
-  flex-basis: max-content;
-  width: 320px;
+  flex: 0 0 320px;
+  /* width: 320px; */
   height: auto;
   border-radius: 20px;
 }
@@ -114,6 +122,8 @@ main .overlay-background-image {
 .synopsis {
   font-size: 16px;
   line-height: 32px;
+  /* width: 400px; */
+  min-height: 84px;
 }
 
 .cta-trailer {
@@ -136,6 +146,7 @@ main .overlay-background-image {
   color: black;
   background: white;
 }
+
 
 .content .detail {
   flex-direction: column;
